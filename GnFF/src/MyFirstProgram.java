@@ -42,6 +42,9 @@ public class MyFirstProgram {
                     System.out.print("Would you like another one? (" + "\u001B[34m" + "y" + "\u001B[32m" + "/" + "\u001B[31m" + "n" + "\u001B[32m" + ") ");
                     userChoice = scanner.next();
                 }
+                if (!(userChoice.equalsIgnoreCase("y")) && !(userChoice.equalsIgnoreCase("n"))) {
+                    userChoice = "y"; //should there be a misinput, it'll default to y
+                }
             }
         }
         System.out.print("\u001B[35m" + "\nbtw, the current java version in this computer is: " + System.getProperty("java.version") + "\u001B[0m");
