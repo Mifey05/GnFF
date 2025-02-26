@@ -36,7 +36,7 @@ public class MyFirstProgram {
             if (!(userChoice.equalsIgnoreCase("y")) && !(userChoice.equalsIgnoreCase("n"))) {
                 userChoice = ""; //Sets the value to empty to continue the loop
                 System.out.print("\033c");
-                System.out.println("Please enter a proper answer");
+                System.out.println("\u001B[33m" + "Please enter a proper answer");
             } // This section checks if the input is neither "y" nor "n", meaning invalid input.
             
         } while (userChoice.isEmpty()); //checks if the variable is still empty, meaning the input is still invalid
